@@ -45,7 +45,7 @@ flags.DEFINE_float('learning_rate', 0.01, 'Initial learning rate.')
 
 def main(_):
   # Import data
-  mnist = input_data.read_data_sets('Mnist_data/', one_hot=True,
+  mnist = input_data.read_data_sets('/home/administrator/ts/', one_hot=True,
                                     fake_data=FLAGS.fake_data)
 
   sess = tf.InteractiveSession()
